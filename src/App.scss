@@ -1,0 +1,10 @@
+.app {
+  height: 100vh;
+
+  .sections {
+    height: calc(100vh - 150px);
+    position: relative;
+    top: 150px;
+    padding: 0 3%;
+  }
+}
