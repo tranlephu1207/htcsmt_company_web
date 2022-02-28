@@ -3,7 +3,7 @@
 // E8CE48
 .topbar {
   width: 100%;
-  height: 150px;
+  height: $topbarHeight;
   background-color: $mainColor;
   // background-color: #E8CE48;
   position: fixed;
@@ -27,23 +27,38 @@
       padding: 0 16px;
 
       img {
-        height: 120px;
+        height: $topbarHeight - 10px;
         aspect-ratio: 1;
         object-fit: contain;
       }
+
+      
+    }
+
+    .display-linebreak {
+      white-space: pre-line;
+      padding-left: 16px;
+      font-size: 20pt;
+      color: black;
     }
 
     .right {
       display: flex;
       align-items: center;
-      flex: 1;
-      height: 100%;
-      padding: 0 16px;
+      // flex: .5;
+      width: 500px;
+      // height: 100%;
+      // background-color: blue;
+      align-self: flex-end;
+      margin-right: 5%;
+      margin-bottom: 16px;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       p {
         color: white;
+        font-size: 14pt;
+        font-weight: 400;
 
         &:hover {
           color: yellow;

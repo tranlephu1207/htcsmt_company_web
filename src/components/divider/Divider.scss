@@ -1,0 +1,17 @@
+@import '../../global.scss';
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $dividerHeight;
+  width: 100%;
+
+  .line-divider {
+    width: 100px;
+    height: 0px;
+    border-bottom: 10px solid $mainYellow;
+    margin: auto;
+    align-self: center;
+  }
+}

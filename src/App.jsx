@@ -1,6 +1,8 @@
 import './App.scss';
 
 import Contact from './components/contact/Contact';
+import Divider from './components/divider/Divider';
+import Intro from './components/intro/Intro';
 import MediaQuery from 'react-responsive'
 import Menu from './components/menu/Menu';
 import Topbar from './components/topbar/Topbar';
@@ -19,7 +21,10 @@ function App() {
         )}
       </MediaQuery>
       <div className='sections'>
+        <Intro />
         <Contact />
+        <Divider />
+        {/* <Contact /> */}
       </div>
     </div>
   );

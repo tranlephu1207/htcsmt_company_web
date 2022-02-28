@@ -1,7 +1,9 @@
 $mainColor: #212D3A;
 $mainYellow: #E8CE48;
+$topbarHeight: 120px;
+$dividerHeight: 80px;
 
-$width: 820px;
+$width: 992px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {

@@ -1,0 +1,43 @@
+@import '../../global.scss';
+
+.intro {
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.35);
+
+  @include mobile {
+    height: 600px;
+  }
+
+  h1 {
+    text-align: center;
+    white-space: pre-line;
+    padding-left: 16px;
+    font-size: 40pt;
+    color: white;
+
+    @include mobile {
+      font-size: 22pt;
+    }
+  }
+
+  a {
+    img {
+      width: 80px;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+

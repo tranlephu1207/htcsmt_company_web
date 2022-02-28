@@ -1,10 +1,24 @@
+@import './global.scss';
+
 .app {
   height: 100vh;
+  scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; // for firefox
+    &::-webkit-scrollbar{
+      display: none;
+    } // for chrome & others
 
   .sections {
-    height: calc(100vh - 150px);
+    // height: calc(100vh - $topbarHeight);
+    width: 100%;
+    min-height: 300vh;
     position: relative;
-    top: 150px;
-    padding: 0 3%;
+    top: $topbarHeight;
+
+    background-image: url('../public/assets/background_workshop.jpeg');
+    background-repeat: repeat-y;
+    align-self: center;
+    background-position: center;
   }
 }
